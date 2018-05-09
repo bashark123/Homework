@@ -15,16 +15,55 @@ public class AmusementRide {
 		System.out.println("press 6 for the Tornado");
 		System.out.println("press Q to quit");
 		 Scanner sc = new Scanner(System.in);
-		 String input = sc.next();
+		
 		 
-		 if (input.equals("1")) {
+		 while (true) {
+			  String input = sc.next();
+			 switch (input) {
+			 
+			 case "1":
+				 BumperCars bc = new BumperCars();
+				 bc.run();
+				 break;
+			 case "2":
+				 JumpAndSmile js = new JumpAndSmile();
+				 js.run();
+				 break;
+			 case "3":
+				 MirrorMaze mm = new MirrorMaze();
+				 mm.run();
+				 break;
+			 case "4":
+				 HauntedHouse hh = new HauntedHouse();
+				 hh.run();
+				 break;
+			 case "5":
+				 TopSpin ts = new TopSpin();
+				 ts.run();
+				 break;
+			 case "6":
+				 Tornado to = new Tornado();
+				 to.run();
+				 break;
+			 case "q":
+				// sc.close();
+				 System.out.println("Goodbye");
+				 System.exit(0);
+				 break;
+			 default:
+				 System.out.println("Invalid Entry");
+				 break;
+			 }
+		 }
+		 
+		/* if (input.equals("1")) {
 			 BumperCars bc = new BumperCars();
 			 bc.run();
 			 } else if (input.equals("2")) {
 				 JumpAndSmile js = new JumpAndSmile();
 				 js.run();
 				 } //else if 
-
+*/
 	}
 }
 
