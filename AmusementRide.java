@@ -56,9 +56,29 @@ public class AmusementRide {
 			}
 		}	
 	
-	// test
+	class HauntedHouse extends AmusementRide{
+		
+		public void run() {
+			System.out.println("HauntedHouse is running");
+			
+				
+			}
+		}		
 	
+	class TopSpin extends AmusementRide{
+		
+		public void run() {
+			System.out.println("TopSpin is running");
+			
+				
+			}
+		}
 	
-	
-	
-	
+	class Tornado extends AmusementRide{
+		
+		public void run() {
+			System.out.println("Tornado is running");
+			
+				
+			}
+		}
